@@ -8,9 +8,8 @@ function App() {
     <>
       <Home />
       <About />
-
       <h1>New Heading</h1>
-      <h1>Hi</h1>
+      <h1>Hi ghfdhgfhhh</h1>
     </>
   );
 }
