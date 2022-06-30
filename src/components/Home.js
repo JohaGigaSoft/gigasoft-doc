@@ -8,6 +8,7 @@ const Home=()=>{
         <p>this is a paragraph tag</p>
         <p>React component</p>
         <h1>hello bangladesh</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, corrupti.</p>
         
        </>
    
