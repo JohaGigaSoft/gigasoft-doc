@@ -5,14 +5,12 @@ import Home from './components/Home';
 
 function App() {
   return (
-   <>
-    <Home/>
-    <About/>
-  
-    <h1>New Heading</h1>
-   </>
-    
-  
+    <>
+      <Home />
+      <About />
+      <h1>New Heading</h1>
+      <h1>Hi ghfdhgfhhh</h1>
+    </>
   );
 }
 
