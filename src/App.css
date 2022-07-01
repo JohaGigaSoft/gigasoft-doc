@@ -7,6 +7,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/* nav-bar start here */
+
 .navbar {
   background: #fff9f9;
 }
@@ -40,3 +42,5 @@
 .fa-arrow-up-right-from-square {
   color: #e3442e;
 }
+
+/* nav-bar end here */
