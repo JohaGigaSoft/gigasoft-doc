@@ -1,43 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { routes } from '../App';
-import {
-  Link,
-  matchRoutes,
-  useLocation,
-  useResolvedPath,
-} from 'react-router-dom';
+import NavLink from './NavLink';
 
 // images
 import logo from '../assets/images/logo.png';
-
-function NavLink({
-  to,
-  exact,
-  className,
-  activeClassName,
-  inactiveClassName,
-  ...rest
-}) {
-  let location = useLocation();
-  let resolvedLocation = useResolvedPath(to);
-  let routeMatches = matchRoutes(routes, location);
-
-  let isActive;
-  if (exact) {
-    isActive = location.pathname === resolvedLocation.pathname;
-  } else {
-    isActive = routeMatches.some(
-      (match) => match.pathname === resolvedLocation.pathname
-    );
-  }
-
-  let allClassNames =
-    className + (isActive ? ` ${activeClassName}` : ` ${inactiveClassName}`);
-
-  return <Link className={allClassNames} to={to} {...rest} />;
-}
 
 const DocNav = () => {
   return (
@@ -50,7 +17,7 @@ const DocNav = () => {
         </NavLink>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto" activeClassName="active">
+          <Nav className="me-auto">
             <NavLink
               to="doc-giga-food"
               className="nav-link"
@@ -103,7 +70,7 @@ const DocNav = () => {
           <Nav>
             <NavLink to="/" className="nav-link inactive">
               Visit Restfood{' '}
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i className="fa-solid fa-arrow-up-right-from-square ms-2"></i>
             </NavLink>
           </Nav>
         </Navbar.Collapse>
