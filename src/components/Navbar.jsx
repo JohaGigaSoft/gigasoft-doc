@@ -8,7 +8,7 @@ import logo from '../assets/images/logo.png';
 
 const DocNav = () => {
   return (
-    <Navbar collapseOnSelect expand="lg">
+    <Navbar collapseOnSelect expand="lg" fixed="top">
       <Container>
         <NavLink to="/" className="navbar-brand">
           <span className="navbar-brand-logo">

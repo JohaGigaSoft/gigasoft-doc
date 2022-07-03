@@ -1,25 +1,45 @@
+import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import AccordionPage from './AccordionPage';
-import NavLink from './NavLink';
 
 const Page = ({ accordions }) => {
+  const [intro, setIntro] = useState(true);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (location.pathname === '/doc-rest-food') {
+      setIntro(true);
+    } else {
+      setIntro(false);
+    }
+  }, [location]);
+
   return (
     <Container>
       <Row className="doc-div">
         <Col md={4} className="accordion-col">
-          <NavLink
-            to="introduction"
-            activeClassName="title-active"
-            inactiveClassName="title-inactive"
-            className="title-link"
-          >
-            Introduction
-          </NavLink>
+          <div className="accordion-col-sticky">
+            <button
+              className={`title-link text-start w-100 ${
+                intro ? 'title-active' : 'title-inactive'
+              }`}
+              onClick={() => navigate('/doc-rest-food')}
+            >
+              Introduction
+            </button>
 
-          {accordions.map((element) => {
-            return <AccordionPage accordion={element} key={element.id} />;
-          })}
+            {accordions.map((element, index) => {
+              return (
+                <AccordionPage
+                  accordion={element}
+                  id={index}
+                  key={element.id}
+                />
+              );
+            })}
+          </div>
         </Col>
         <Col md={8} className="accordion-col-two">
           <div>

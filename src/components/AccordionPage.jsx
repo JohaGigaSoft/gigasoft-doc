@@ -1,31 +1,55 @@
-import { Accordion } from 'react-bootstrap';
+import { useEffect, useRef } from 'react';
+import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import NavLink from './NavLink';
+import { Plus } from './svgs/Plus';
 
-const AccordionPage = ({ accordion }) => {
-  const { id, accordionName, items } = accordion;
+const AccordionPage = ({ accordion, id }) => {
+  const [show, setShow] = useState(false);
+  const body = useRef(null);
+  const location = useLocation();
+  const { accordionName, items } = accordion;
+
+  useEffect(() => {
+    let isShow = body.current.children[0].classList.value
+      .split(' ')
+      .indexOf('sub-active');
+    if (isShow >= 0) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+    console.log('show');
+  }, [location]);
 
   return (
-    <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey={id}>
-        <Accordion.Header className="title-link-btn">
-          {accordionName}
-        </Accordion.Header>
-        <Accordion.Body>
+    <div className="accordion mt-2">
+      <div
+        className={`accordion-title title-link-btn ${
+          show ? 'show-active' : ''
+        }`}
+        onClick={() => setShow(!show)}
+      >
+        <span>{accordionName}</span>
+
+        <Plus className="toggle" aria-expanded={show} />
+      </div>
+      <div className="accordion-content" aria-expanded={!show}>
+        <div className="d-flex flex-column" ref={body}>
           {items.map((item) => (
-            <div key={item.id} className="d-flex">
-              <NavLink
-                to={`${item.id}`}
-                activeClassName="sub-active"
-                inactiveClassName="sub-inactive"
-                className="sub-link flex-grow-1"
-              >
-                {item.itemName}
-              </NavLink>
-            </div>
+            <NavLink
+              to={`${item.id}`}
+              activeClassName="sub-active"
+              inactiveClassName="sub-inactive"
+              className="sub-link flex-grow-1"
+              key={item.itemName}
+            >
+              {item.itemName}
+            </NavLink>
           ))}
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+        </div>
+      </div>
+    </div>
   );
 };
 export default AccordionPage;

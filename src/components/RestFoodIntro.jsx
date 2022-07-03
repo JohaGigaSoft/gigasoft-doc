@@ -1,10 +1,11 @@
 import { Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import Info from './Info';
-import Previous from './svgs/Previous';
 import Next from './svgs/Next';
 import UnorderedList from './UnorderedList';
 
 const RestFoodIntro = () => {
+  const navigate = useNavigate();
   return (
     <Container className="introduction">
       <h1>Introduction</h1>
@@ -77,10 +78,11 @@ const RestFoodIntro = () => {
       </div>
       <div className="d-flex justify-content-end">
         <div className="btn-pre-next">
-          <button className="me-3">
-            <Previous width="16px" /> Previous
-          </button>
-          <button>
+          <button
+            onClick={() => {
+              navigate('install-on-server');
+            }}
+          >
             Next <Next width="16px" />
           </button>
         </div>

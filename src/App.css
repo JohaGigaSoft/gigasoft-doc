@@ -50,6 +50,7 @@
 
 .doc-div {
   min-height: 100vh;
+  margin-top: 56px;
 }
 
 /* accordion */
@@ -58,11 +59,11 @@ a {
   text-decoration: none;
   font-size: 20px;
 }
-a.title-inactive:hover {
+.title-inactive:hover {
   color: #535252;
 }
 
-a.title-active:hover {
+.title-active:hover {
   color: #fff;
 }
 
@@ -70,6 +71,14 @@ a.title-active:hover {
   border-right: 1px solid #e4e4e4;
   display: flex;
   flex-direction: column;
+  align-items: start;
+}
+
+.accordion-col-sticky {
+  width: 100%;
+  position: sticky;
+  top: 76px;
+  margin-bottom: 30px;
 }
 
 .accordion-col-two,
@@ -95,23 +104,24 @@ a.title-active:hover {
   padding: 0;
 }
 
-.accordion-button:not(.collapsed) {
-  color: #e3442e;
-  background-color: transparent;
-  box-shadow: none;
-  font-weight: 700;
-}
-
 .title-link {
   padding: 10px 0 10px 15px;
   border-radius: 5px;
+  border: none;
 }
 
-.title-link-btn button {
+.title-link-btn {
   padding: 10px 10px 10px 15px;
   border-radius: 5px;
   background: #fff2f0;
   color: #535252;
+  border: none;
+}
+.title-link-btn.show-active {
+  color: #e3442e;
+  background-color: transparent;
+  box-shadow: none;
+  font-weight: 700;
 }
 
 .title-inactive {
@@ -126,13 +136,14 @@ a.title-active:hover {
 }
 
 .sub-link {
-  padding: 10px 10px 10px 25px;
+  padding: 10px 10px 10px 45px;
   border-radius: 5px;
   color: #707070;
 }
 
 .sub-link:hover {
   color: #707070;
+  background: #f6fdff;
 }
 
 .sub-active {
@@ -254,26 +265,156 @@ a.title-active:hover {
 .btn-pre-next button:hover {
   background-image: linear-gradient(to right, #bf1d06, #d31a00);
   color: #fff;
-  border: none;
+  border: 1px solid #fff;
+  cursor: pointer;
 }
 
-.btn:focus {
-  color: #3d3d3d;
-  background-color: transparent;
-  border-color: #3d3d3d;
-  outline: 0;
-  box-shadow: none;
-}
-
-.btn:active {
-  color: #fff;
-  background-color: #bf1d06;
-  border-color: #fff;
+.btn-pre-next button:active {
   opacity: 0.5;
 }
 
 /* footer */
 
 .footer {
-  background: #3d3d3d;
+  background: #1d1d1d;
+  padding-bottom: 30px;
+}
+
+/* text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium */
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.footer-logo {
+  width: 140px;
+}
+
+.footer .section {
+  margin-right: 0px;
+  margin-top: 40px;
+}
+
+.footer .logo-des {
+  max-width: 380px;
+}
+
+.logo-des p {
+  margin-top: 40px;
+  padding-right: 40px;
+}
+
+.footer-logo-icon {
+  margin-top: 48px;
+  width: 30px;
+  height: 30px;
+}
+
+.footer .list-item {
+  margin-top: 25px;
+}
+
+.footer .contact-p {
+  max-width: 280px;
+}
+
+.footer .contact-items {
+  margin-top: 25px;
+}
+
+.border-footer {
+  height: 1px;
+  background: #928f8f;
+  margin-top: 90px;
+}
+
+.copy-write {
+  color: #fff;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 576px) {
+  .footer .section {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .footer h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .footer h3 {
+    font-size: 30px;
+  }
+  .footer p {
+    font-size: 20px;
+  }
+}
+
+/* accordion new */
+
+.accordion {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.accordion:nth-of-type(1) {
+  border-top-width: 1px;
+}
+
+.accordion-title {
+  font-size: 18px;
+  color: #3e4e50;
+  font-weight: 500;
+  display: flex;
+}
+
+.accordion-title:hover {
+  cursor: pointer;
+}
+
+.accordion .toggle {
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  margin-left: auto;
+  transition: all 0.35s ease;
+}
+
+.accordion .toggle {
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
+}
+.accordion .toggle[aria-expanded='true'] {
+  transform: rotate(180deg);
+}
+
+.accordion .toggle #vertical {
+  transform: rotate(0deg);
+}
+.accordion .toggle[aria-expanded='true'] #vertical {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  overflow: hidden;
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
+}
+
+.accordion-content[aria-expanded='true'] {
+  max-height: 0px;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
 }
