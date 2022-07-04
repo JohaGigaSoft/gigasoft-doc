@@ -19,6 +19,9 @@ const NavLink = ({
   let routeMatches = matchRoutes(routes, location);
 
   let isActive;
+  // isActive = location.pathname === resolvedLocation.pathname;
+  // console.log(resolvedLocation.pathname, isActive);
+
   if (exact) {
     isActive = location.pathname === resolvedLocation.pathname;
   } else {

@@ -11,15 +11,18 @@ const AccordionPage = ({ accordion, id }) => {
   const { accordionName, items } = accordion;
 
   useEffect(() => {
-    let isShow = body.current.children[0].classList.value
-      .split(' ')
-      .indexOf('sub-active');
-    if (isShow >= 0) {
+    // let isShow = body.current.children[0].classList.value
+    //   .split(' ')
+    //   .indexOf('sub-active');
+
+    let isShow = Object.entries(body.current.children).map(([_key, value]) => {
+      return value.className.split(' ').indexOf('sub-active') >= 0;
+    });
+    if (isShow.indexOf(true) >= 0) {
       setShow(true);
     } else {
       setShow(false);
     }
-    console.log('show');
   }, [location]);
 
   return (
@@ -38,7 +41,7 @@ const AccordionPage = ({ accordion, id }) => {
         <div className="d-flex flex-column" ref={body}>
           {items.map((item) => (
             <NavLink
-              to={`${item.id}`}
+              to={`${item.id + id}`}
               activeClassName="sub-active"
               inactiveClassName="sub-inactive"
               className="sub-link flex-grow-1"

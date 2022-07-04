@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
-import AccordionPage from './AccordionPage';
+import AccordionPage from '../components/AccordionPage';
 
 const Page = ({ accordions }) => {
   const [intro, setIntro] = useState(true);
@@ -9,7 +9,8 @@ const Page = ({ accordions }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (location.pathname === '/doc-rest-food') {
+    let indexOfSlash = location.pathname.split('/').length - 1;
+    if (indexOfSlash === 1) {
       setIntro(true);
     } else {
       setIntro(false);

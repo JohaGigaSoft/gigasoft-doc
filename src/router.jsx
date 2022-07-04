@@ -1,15 +1,18 @@
 import Details from './components/Details';
-import Page from './components/Page';
+import Home from './components/Home';
+import Page from './layouts/Page';
 import RestFoodIntro from './components/RestFoodIntro';
 import SecondPage from './components/SecondPage';
+import GigaMartIntro from './components/GigaMartIntro';
 
 // Data
-import { goFood } from './data/goFood';
+import { restFood } from './data/restFood';
+import { gigaMart } from './data/gigaMart';
 
 export const routes = [
   {
     path: '/',
-    element: <SecondPage title="Home" />,
+    element: <Home />,
   },
   {
     path: 'doc-giga-food',
@@ -17,7 +20,7 @@ export const routes = [
   },
   {
     path: 'doc-rest-food',
-    element: <Page accordions={goFood} />,
+    element: <Page accordions={restFood} />,
     children: [
       {
         index: true,
@@ -39,7 +42,17 @@ export const routes = [
   },
   {
     path: 'doc-giga-mart',
-    element: <SecondPage title="Giga mart" />,
+    element: <Page accordions={gigaMart} />,
+    children: [
+      {
+        index: true,
+        element: <GigaMartIntro />,
+      },
+      {
+        path: ':docGigaFood',
+        element: <Details />,
+      },
+    ],
   },
   {
     path: 'doc-g-cash',

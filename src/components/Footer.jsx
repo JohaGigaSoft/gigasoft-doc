@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
           </div>
           {servLink.map((data) => (
-            <div className="section" key={data.id}>
+            <div className="section me-3" key={data.id}>
               <h3>{data.head}</h3>
               <div className="mt-10">
                 {data.list.map((list, ind) => (

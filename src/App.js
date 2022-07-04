@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import DocNav from './components/Navbar';
+import DocNav from './layouts/Navbar';
 import { useRoutes } from 'react-router-dom';
 import { routes } from './router';
 import Footer from './components/Footer';
-import Wrapper from './components/Wrapper';
+import Wrapper from './layouts/Wrapper';
 
 function App() {
   let element = useRoutes(routes);

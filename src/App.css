@@ -7,8 +7,23 @@
   font-family: 'Roboto', sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 26.5px !important;
+}
+
+body {
+  /* background: #f8f8f8; */
+}
+
 /* nav-bar start here */
 
+/* #f8f8f8 */
 .navbar {
   background: #fff9f9;
   box-shadow: 0 4px 4px 0 rgba(188, 188, 188, 0.25);
@@ -16,7 +31,7 @@
 
 .navbar-brand {
   display: flex;
-  width: 236px;
+  width: 136px;
 }
 
 .navbar-brand-logo {
@@ -28,12 +43,16 @@
   font-weight: 500;
 }
 
+.nav-link.active.active {
+  color: #ec4d37;
+}
+
 .nav-link.inactive {
   color: #3d3d3d;
 }
 
-.nav-link.active {
-  color: #ec4d37 !important;
+.nav-link.active.inactive {
+  color: #3d3d3d;
 }
 
 .nav-link:hover {
@@ -42,6 +61,12 @@
 
 .fa-arrow-up-right-from-square {
   color: #e3442e;
+}
+
+@media only screen and (min-width: 800px) {
+  .navbar-brand {
+    width: 236px;
+  }
 }
 
 /* nav-bar end here */
@@ -71,7 +96,7 @@ a {
   border-right: 1px solid #e4e4e4;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .accordion-col-sticky {
@@ -173,6 +198,8 @@ a {
 
 .introduction {
   padding-bottom: 35px;
+  line-height: 26.5px !important;
+  /* background: #f8f8f8; */
 }
 
 .introduction h1 {
@@ -308,11 +335,14 @@ a {
 
 .logo-des p {
   margin-top: 40px;
-  padding-right: 40px;
+  padding: 0 10px;
 }
 
 .footer-logo-icon {
   margin-top: 48px;
+}
+
+.footer-logo-icon img {
   width: 30px;
   height: 30px;
 }
@@ -337,12 +367,15 @@ a {
 
 .copy-write {
   color: #fff;
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 @media only screen and (min-width: 576px) {
   .footer .section {
     margin-right: 40px;
+  }
+  .logo-des p {
+    padding: 0 40px 0 0;
   }
 }
 
@@ -417,4 +450,183 @@ a {
 .accordion-content[aria-expanded='true'] {
   max-height: 0px;
   transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+/* home */
+
+.home-div {
+  margin: 96px 0 60px 0;
+}
+
+.home-div .icon-div {
+  background: #ec4d37;
+  padding: 100px 10px;
+  overflow: hidden;
+}
+
+.icon-div img {
+  width: 260px;
+  z-index: 10;
+}
+
+.icon-div button {
+  border: none;
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-top: 50px;
+  background: #fff;
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.icon-div button:hover {
+  color: #ec4d37;
+}
+
+.circle,
+.rectangle {
+  position: absolute;
+}
+
+.circle.big {
+  width: 14%;
+  height: 300px;
+  top: -134px;
+  left: -4%;
+}
+
+.circle.small {
+  width: 6%;
+  height: 100px;
+  top: -42px;
+  right: -2%;
+}
+
+.rectangle {
+  width: 120px;
+  height: 200px;
+}
+
+.rectangle.one {
+  left: -3%;
+  bottom: -15px;
+}
+
+.rectangle.two {
+  right: 25%;
+  top: -91px;
+}
+
+.rectangle.three {
+  right: -4%;
+  bottom: -33px;
+}
+
+.home-div .container {
+  margin-top: 50px;
+}
+
+/* card */
+
+.card-box .card {
+  max-width: 100%;
+  border: none;
+  background: #f8f8f8;
+  margin: 10px 10px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.card-box .card:hover {
+  box-shadow: 0 -1px 18px 0 rgba(64, 64, 64, 0.25);
+}
+
+.card-box .card .img-card {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.card-box .card .img-card img {
+  width: auto;
+  height: 100%;
+  padding: 10px;
+}
+
+.card-box .card-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px 0 0 0;
+  background: #fff5f3;
+  padding: 4px 10px;
+}
+
+.card-box .card-body {
+  padding: 0;
+}
+
+.card-box .card-body p {
+  font-size: 16px;
+  color: #585858;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 576px) {
+  .card-box .card .img-card {
+    height: 227px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .icon-div img {
+    width: 390px;
+  }
+  .circle.big {
+    width: 10%;
+    height: 300px;
+    top: -121px;
+    left: -4%;
+  }
+  .circle.small {
+    width: 5%;
+    height: 100px;
+    top: -29px;
+    right: -1%;
+  }
+  .rectangle {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card-box .card {
+    width: 424px;
+    height: 400px;
+  }
+  .card-box .card .img-card {
+    height: 180px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .icon-div button {
+    padding: 7px 35px;
+    font-size: 22px;
+  }
+  .card-box .card .img-card {
+    height: 227px;
+    margin-top: 30px;
+  }
+  .card-box .card {
+    width: 424px;
+    height: 470px;
+  }
+  .card-box .card-title {
+    margin: 25px 0 10px 0;
+    background: #fff5f3;
+    padding: 8px 10px;
+  }
 }

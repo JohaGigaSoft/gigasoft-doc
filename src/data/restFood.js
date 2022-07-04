@@ -1,4 +1,4 @@
-export const goFood = [
+export const restFood = [
   {
     id: 1,
     accordionName: 'Admin panel',
@@ -33,15 +33,19 @@ export const goFood = [
   },
   {
     id: 3,
-    accordionName: 'Environment Setup',
+    accordionName: 'Mobile Apps',
     items: [
       {
-        id: 'environment-setup-one',
-        itemName: 'Environment Setup One',
+        id: 'mandatory-setup',
+        itemName: 'Mandatory setup',
       },
       {
-        id: 'environment-setup-two',
-        itemName: 'Environment Setup Two',
+        id: 'customization',
+        itemName: 'Customization',
+      },
+      {
+        id: 'app-build-release',
+        itemName: 'App build & release',
       },
     ],
   },

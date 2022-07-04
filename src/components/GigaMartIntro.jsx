@@ -4,7 +4,7 @@ import Info from './Info';
 import Next from './svgs/Next';
 import UnorderedList from './UnorderedList';
 
-const RestFoodIntro = () => {
+const GigaMartIntro = () => {
   const navigate = useNavigate();
   return (
     <Container className="introduction">
@@ -14,18 +14,13 @@ const RestFoodIntro = () => {
         <p className="title-des">
           Thank you you interest in <span className="giga-food">Giga food</span>
         </p>
-        <p className="overview-des">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. A a varius
-          amet, quisque leo massa vitae. Tincidunt volutpat quis dignissim quis
-          mauris sed at. Vulputate hendrerit sit consequat egestas ut tellus
-          massa viverra. Feugiat fermentum arcu libero enim a hac feugiat.
-          Placerat ac nunc ut porttitor enim. Non orci malesuada consecte
-        </p>
+
+        <UnorderedList numbers={7} />
+
         <p className="list">
           stackfood comprise of 3 mobile applications, 2 web panel, 1 website
           and 1 landing page
         </p>
-        <UnorderedList numbers={7} />
       </div>
       <Info />
       <div className="happy-flow section">
@@ -41,19 +36,8 @@ const RestFoodIntro = () => {
           Ultricies augue sollicitudin amet mi. Bibendum aliquet amet morbi
           adipiscing libero lobortis.
         </p>
-        <h3>Order flow</h3>
-        <UnorderedList numbers={7} />
-        <h3>Dispatch now</h3>
-        <UnorderedList numbers={2} />
       </div>
-      <div className="transaction-flow section">
-        <h3>Transaction Flow</h3>
-        <p className="title-des">
-          Stackfood comprise of 3 mobile applications, 2 web panel, 1 website
-          and 1 landing page
-        </p>
-        <UnorderedList numbers={4} />
-      </div>
+
       <Info />
       <div className="section">
         <h3>Admin commission</h3>
@@ -80,7 +64,7 @@ const RestFoodIntro = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('install-on-server0');
+              navigate('basic0');
             }}
           >
             Next <Next width="16px" />
@@ -90,4 +74,4 @@ const RestFoodIntro = () => {
     </Container>
   );
 };
-export default RestFoodIntro;
+export default GigaMartIntro;
