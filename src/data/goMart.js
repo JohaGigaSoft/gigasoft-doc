@@ -1,4 +1,4 @@
-export const gigaMart = [
+export const goMart = [
   {
     id: 1,
     accordionName: 'Prerequisite',

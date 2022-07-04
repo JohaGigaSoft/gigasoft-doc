@@ -17,8 +17,8 @@ h6 {
   line-height: 26.5px !important;
 }
 
-body {
-  /* background: #f8f8f8; */
+.text-decoration-color {
+  text-decoration-color: #4cb3d4 !important;
 }
 
 /* nav-bar start here */
@@ -75,7 +75,7 @@ body {
 
 .doc-div {
   min-height: 100vh;
-  margin-top: 56px;
+  margin-top: 76px;
 }
 
 /* accordion */
@@ -102,7 +102,7 @@ a {
 .accordion-col-sticky {
   width: 100%;
   position: sticky;
-  top: 76px;
+  top: 86px;
   margin-bottom: 30px;
 }
 
@@ -265,7 +265,7 @@ a {
 }
 
 .info p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #000;
 }
