@@ -1,7 +1,7 @@
 export const server = [
   {
     id: 1,
-    content: '6amMart requires PHP v7.4+ and MySQL 5.7+',
+    content: 'Giga Soft requires PHP v7.4+ and MySQL 5.7+',
   },
   {
     id: 2,

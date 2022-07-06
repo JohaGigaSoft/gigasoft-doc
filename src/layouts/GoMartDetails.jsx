@@ -8,6 +8,11 @@ import MandatorySetup from '../pages/goMart/MandatorySetup';
 import MobileApp from '../pages/goMart/MobileApp';
 import Server from '../pages/goMart/Server';
 import MobileCustomization from '../pages/goMart/MobileCustomization';
+import AppBuildRelease from '../pages/goMart/AppBuildRelease';
+import WebMandetorySetup from '../pages/goMart/WebMandetorySetup';
+import SetupOnServer from '../pages/goMart/SetupOnServer';
+import AdminPanel from '../pages/goMart/AdminPanel';
+import AppAndWeb from '../pages/goMart/AppAndWeb';
 
 const GoMartDetails = () => {
   let params = useParams();
@@ -24,7 +29,15 @@ const GoMartDetails = () => {
       {routeLink === 'goMart-customization-2' && <Customization />}
       {routeLink === 'goMart-mandatory-setup-3' && <MandatorySetup />}
       {routeLink === 'goMart-customization-3' && <MobileCustomization />}
-      <p>{routeLink}</p>
+      {routeLink === 'goMart-app-build-release-3' && <AppBuildRelease />}
+      {routeLink === 'goMart-mandatory-setup-4' && <WebMandetorySetup />}
+      {routeLink === 'goMart-build-code-and-setup-on-server-4' && (
+        <SetupOnServer />
+      )}
+      {routeLink === 'goMart-admin-Panel-5' && <AdminPanel />}
+      {routeLink === 'goMart-app-web-5' && <AppAndWeb />}
+
+      {/* <p>{routeLink}</p> */}
     </div>
   );
 };

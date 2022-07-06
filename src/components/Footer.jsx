@@ -10,7 +10,7 @@ import pinterest from '../assets/images/pinterest-icon.png';
 import location from '../assets/images/location.png';
 import call from '../assets/images/call.png';
 import mail from '../assets/images/mail.png';
-import logo from '../assets/images/logo-footer.png';
+import logo from '../assets/images/logo-2.png';
 
 const logos = [insta, twitter, linkedin, facebook, t, pinterest];
 const contents = [

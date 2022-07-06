@@ -16,7 +16,7 @@ const Info = ({ children, danger }) => {
               className="fa-solid fa-skull-crossbones me-2"
               style={{ color: '#e3442e' }}
             ></i>
-            Danger
+            WARNING
           </h5>
           <p className="danger">{children}</p>
         </>

@@ -13,7 +13,7 @@ const Basic = () => {
       <h1>Basic</h1>
       <div className="section overview">
         <p className="title-des">
-          As 6amMart is a complete system with lots of modules for web and
+          As Giga Soft is a complete system with lots of modules for web and
           mobile apps, it is compulsory to have some basic knowledge in both
           server side and mobile app development if you want to do the
           installation, setup and publishing with your branding yourself.

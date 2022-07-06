@@ -22,7 +22,7 @@ const InstallOnServer = () => {
           After download the code from codecayon upload the{' '}
           <Mark className="me-1">Admin new install</Mark> zip file in your
           server following your expected directory and extract the zip file.
-          6amMart admin panel can be installed on a domain or subdomain: For
+          Giga Soft admin panel can be installed on a domain or subdomain: For
           Example, yourdomain.com OR xyz.yourdomain.com.
         </p>
 
@@ -40,8 +40,8 @@ const InstallOnServer = () => {
         <h3>Admin Panel Installation</h3>
         <p>
           <Mark>Step 1:</Mark> After download the code from codecayon upload the
-          admin install zip in your directory and extract the zip file. 6amMart
-          can be installed on your main domain or subdomain: For Example,
+          admin install zip in your directory and extract the zip file. Giga
+          Soft can be installed on your main domain or subdomain: For Example,
           <Mark className="mx-1">yourdomain.com</Mark>
           OR <Mark>hello.yourdomain.com</Mark> It also CAN be installed in the
           subdirectory path of your domain. For Example,
@@ -49,7 +49,7 @@ const InstallOnServer = () => {
         </p>
 
         <p>
-          6amMart requires an <Mark>SSL certificate</Mark> to be installed on
+          Giga Soft requires an <Mark>SSL certificate</Mark> to be installed on
           your domain to work with all the services. A{' '}
           <Mark>FREE SSL certificate</Mark> can be easily installed on your
           domain using{' '}

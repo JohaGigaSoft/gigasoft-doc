@@ -46,7 +46,7 @@ const GoMartIntro = () => {
         The delivery boy app is developed using flutter so it will run both in
         Android and iOS but as the delivery boy app fully depends on location we
         suggest don’t use it for iOS. This documentation covers mostly all the
-        aspects of setting up Multi Store Item Delivery Application - 6amMart.
+        aspects of setting up Multi Store Item Delivery Application - Giga Soft.
         For any queries pre-sales or tech support, please open a ticket at
         <a
           href="https://support.gigasoft.com/"

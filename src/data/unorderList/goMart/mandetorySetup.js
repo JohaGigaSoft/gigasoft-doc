@@ -43,13 +43,17 @@ export const firebaseSetupOne = [
   {
     id: 1,
     content: (
-      <span>
+      <span className="info">
         Create your own firebase project from
-        <span style={{ color: '#e3442e' }}>
+        <a
+          href="https://firebase.flutter.dev/docs/messaging/apple-integration"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           https://console.firebase.google.com
-        </span>{' '}
-        and also add an android app there with your own package name and app
-        name.
+        </a>
+        <span style={{ color: '#e3442e' }}></span> and also add an android app
+        there with your own package name and app name.
       </span>
     ),
   },
@@ -94,11 +98,11 @@ export const firebaseSetupTwo = [
         <Mark>&lt;project&gt;/iOS/</Mark> folder. Also follow this documentation
         for full setup for IOS:
         <a
-          href="https://firebase.flutter.dev/docs/messaging/apple-integration"
+          href="https://console.firebase.google.com"
           target="_blank"
           rel="noreferrer noopener"
         >
-          https://firebase.flutter.dev/docs/messaging/apple-integration
+          https://console.firebase.google.com
         </a>
       </span>
     ),

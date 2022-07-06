@@ -294,11 +294,13 @@ div.info {
 
 .info a {
   transition: all 0.3s;
+  color: #e3442e;
+  display: block;
 }
 
 .info a:hover {
   text-decoration-color: #baf88a !important;
-  color: #e3442e !important;
+  color: #3fa2e4 !important;
 }
 
 /* happy flow */
@@ -365,7 +367,7 @@ div.info {
 }
 
 .logo-des p {
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 0 10px;
 }
 
@@ -660,4 +662,40 @@ div.info {
     background: #fff5f3;
     padding: 8px 10px;
   }
+}
+
+/* code */
+
+.code-with-link {
+  margin: 20px 0;
+  background: rgba(246, 248, 250);
+  border-radius: 4px;
+}
+.code-with-link .para p {
+  margin: 0px;
+  padding: 6px 16px;
+}
+.code-with-link .para p {
+  margin: 0px;
+  padding: 6px 16px;
+  color: rgb(131, 131, 127);
+  font-weight: 600;
+}
+
+.code-with-link pre {
+  margin: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  padding: 10px 16px !important;
+}
+
+/* tablist */
+
+.nav-tabs .nav-item .nav-link {
+  color: #003100 !important;
+}
+
+
+.nav-tabs .nav-item .nav-link.active {
+  color: #e3442e !important;
 }

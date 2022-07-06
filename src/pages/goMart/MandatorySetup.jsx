@@ -13,11 +13,33 @@ import {
   mobileMandatorySetup,
 } from '../../data/unorderList/goMart/mandetorySetup';
 
+import PrismCode from 'react-prism';
+import 'prismjs';
+import 'prismjs/components/prism-jsx.min';
+import 'prismjs/themes/prism-okaidia.css';
+
+export const BlockOfCode = ({ code, link }) => {
+  return (
+    <div className="code-with-link">
+      <div className="para">
+        <p>{link}</p>
+      </div>
+      <pre>
+        <PrismCode className="language-jsx" children={code} />
+      </pre>
+    </div>
+  );
+};
+
 const MandatorySetup = () => {
   const navigate = useNavigate();
   return (
     <Container className="introduction">
       <h1>Mandatory setup</h1>
+      <BlockOfCode
+        link="/lib/util/app_constrants.dart"
+        code={`static const String APP_NAME = ‘My App’;`}
+      />
       <Info>
         Same documentation for all related projects like Delivery & Store
       </Info>
@@ -40,19 +62,36 @@ const MandatorySetup = () => {
 
       <div className="section">
         <h3>Change App Name</h3>
-        <p>
-          1. You need to set your app name in three different place. Open <br />{' '}
-          <Mark>&lt;project&gt;/lib/util/app_constrants.dart</Mark> and set the
-          value of <Mark>APP_NAME</Mark>
-        </p>
-        <p>
-          2. Change the value of label from{' '}
-          <Mark>&lt;project&gt;/android/app/src/main/AndroidManifest.xml</Mark>
-        </p>
-        <p>
-          3. Change the value of CFBundleName from{' '}
-          <Mark>&lt;project&gt;/iOS/Runner/info.plist</Mark>
-        </p>
+        <ol>
+          <li>
+            You need to set your app name in three different place. Open <br />{' '}
+            <Mark>&lt;project&gt;/lib/util/app_constrants.dart</Mark> and set
+            the value of <Mark>APP_NAME</Mark>
+          </li>
+          <BlockOfCode
+            link="/lib/util/app_constrants.dart"
+            code={`static const String APP_NAME = ‘My App’;`}
+          />
+          <li>
+            Change the value of label from{' '}
+            <Mark>
+              &lt;project&gt;/android/app/src/main/AndroidManifest.xml
+            </Mark>
+          </li>
+          <BlockOfCode
+            link="/android/app/src/main/AndroidManifest.xml"
+            code={`android:label="My App"`}
+          />
+          <li>
+            Change the value of CFBundleName from{' '}
+            <Mark>&lt;project&gt;/iOS/Runner/info.plist</Mark>
+          </li>
+          <BlockOfCode
+            link="/iOS/Runner/info.plist"
+            code={`<key>CFBundleName</key>
+<string>My App</string>`}
+          />
+        </ol>
         <Info>Recommended tutorial is below 👇</Info>
         <Iframe src="https://www.youtube.com/embed/2fgCgYrXwJ0" />
       </div>
@@ -68,6 +107,10 @@ const MandatorySetup = () => {
           <Mark>BASE_URL</Mark>
           variable value with your own URL.
         </p>
+        <BlockOfCode
+          link="/lib/util/app_constrants.dart"
+          code={`static const String BASE_URL = 'https://your_domain.com';`}
+        />
 
         <Iframe src="https://www.youtube.com/embed/2fgCgYrXwJ0" />
       </div>
@@ -115,6 +158,27 @@ const MandatorySetup = () => {
           <Mark>&lt;project&gt;/android/app/src/main/AndroidManifest.xml</Mark>
           and place the value of <Mark>com.google.android.geo.API_KEY</Mark>
         </p>
+        <BlockOfCode
+          link="/android/app/src/main/AndroidManifest.xml"
+          code={`<meta-data android:name="com.google.android.geo.API_KEY" android:value=“YOUR_MAP_API_KEY_HERE”/>`}
+        />
+        <p>
+          For iOS: open{' '}
+          <Mark>&lt;project&gt;/iOS/Runner/AppDelegate.swift</Mark> and place
+          the value of <Mark>GMSServices.provideAPIKey</Mark>
+        </p>
+        <BlockOfCode
+          link="/iOS/Runner/AppDelegate.swift"
+          code={`GMSServices.provideAPIKey(“YOUR_MAP_API_KEY_HERE")`}
+        />
+        <p>
+          For web: open <Mark>&lt;project&gt;/web/index.html</Mark> and place
+          the value of <Mark>https://maps.googleapis.com/maps/api/js?key</Mark>
+        </p>
+        <BlockOfCode
+          link="/web/index.html"
+          code={`<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_MAP_API_KEY_HERE"></script>`}
+        />
         <Info>Recommended tutorial is below 👇</Info>
         <Iframe src="https://www.youtube.com/embed/kfHNfPEzSLs" />
       </div>
@@ -123,7 +187,7 @@ const MandatorySetup = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-customization-2', {
+              navigate('/doc-go-mart/goMart-install-on-server-2', {
                 replace: true,
               });
             }}
