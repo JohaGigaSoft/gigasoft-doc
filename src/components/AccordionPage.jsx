@@ -41,7 +41,7 @@ const AccordionPage = ({ accordion, id }) => {
         <div className="d-flex flex-column" ref={body}>
           {items.map((item) => (
             <NavLink
-              to={`${item.id + id}`}
+              to={`${item.id + '-' + id}`}
               activeClassName="sub-active"
               inactiveClassName="sub-inactive"
               className="sub-link flex-grow-1"

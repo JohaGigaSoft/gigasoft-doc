@@ -1,4 +1,4 @@
-import Details from './components/Details';
+import Details from './layouts/Details';
 import Home from './components/Home';
 import Page from './layouts/Page';
 import RestFoodIntro from './components/RestFoodIntro';
@@ -8,6 +8,7 @@ import GoMartIntro from './components/GoMartIntro';
 import { restFood } from './data/restFood';
 import { goMart } from './data/goMart';
 import Introduction from './components/Introduction';
+import GoMartDetails from './layouts/GoMartDetails';
 
 export const routes = [
   {
@@ -39,7 +40,7 @@ export const routes = [
       },
       {
         path: ':docGigaFood',
-        element: <Details />,
+        element: <GoMartDetails />,
       },
     ],
   },

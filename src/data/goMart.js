@@ -4,48 +4,94 @@ export const goMart = [
     accordionName: 'Prerequisite',
     items: [
       {
-        id: 'basic',
+        id: 'goMart-basic',
         itemName: 'Basic',
       },
       {
-        id: 'server',
+        id: 'goMart-server',
         itemName: 'Server',
       },
       {
-        id: 'mobile-app',
+        id: 'goMart-mobile-app',
         itemName: 'Mobile app',
       },
     ],
   },
   {
     id: 2,
-    accordionName: 'Update',
+    accordionName: 'Environment Setup',
     items: [
       {
-        id: 'admin-Panel',
-        itemName: 'Admin Panel',
+        id: 'goMart-flutter-sdk',
+        itemName: 'Flutter SDK',
       },
       {
-        id: 'app-web',
-        itemName: 'App & Web',
+        id: 'goMart-local-server',
+        itemName: 'Local server (not mandatory)',
       },
     ],
   },
   {
     id: 3,
-    accordionName: 'Mobile Apps',
+    accordionName: 'Admin Panel',
     items: [
       {
-        id: 'mandatory-setup',
+        id: 'goMart-install-on-server',
+        itemName: 'Install on server',
+      },
+      {
+        id: 'goMart-mandatory-setup',
         itemName: 'Mandatory setup',
       },
       {
-        id: 'customization',
+        id: 'goMart-customization',
+        itemName: 'Customization',
+      },
+    ],
+  },
+  {
+    id: 4,
+    accordionName: 'Mobile Apps',
+    items: [
+      {
+        id: 'goMart-mandatory-setup',
+        itemName: 'Mandatory setup',
+      },
+      {
+        id: 'goMart-customization',
         itemName: 'Customization',
       },
       {
-        id: 'app-build-release',
+        id: 'goMart-app-build-release',
         itemName: 'App build & release',
+      },
+    ],
+  },
+  {
+    id: 5,
+    accordionName: 'Web App',
+    items: [
+      {
+        id: 'goMart-mandatory-setup',
+        itemName: 'Mandatory setup',
+      },
+      {
+        id: 'goMart-build-code-and-setup-on-server',
+        itemName: 'Build code and setup on server',
+      },
+    ],
+  },
+  {
+    id: 6,
+    accordionName: 'Update',
+    items: [
+      {
+        id: 'goMart-admin-Panel',
+        itemName: 'Admin Panel',
+      },
+      {
+        id: 'goMart-app-web',
+        itemName: 'App & Web',
       },
     ],
   },

@@ -5,8 +5,13 @@ import {
   orderFlow,
   dispatchFlow,
   transactionFlow,
-} from '../data/unorderList';
+  adminCommission,
+  storeEarning,
+  deliveryBoyEarning,
+  cashFlow,
+} from '../data/unorderList/goMart/introductionList';
 import Info from './Info';
+import Mark from './Mark';
 import Next from './svgs/Next';
 import UnorderedList from './UnorderedList';
 
@@ -46,6 +51,8 @@ const GoMartIntro = () => {
         <a
           href="https://support.gigasoft.com/"
           className="ms-2 text-black text-decoration-underline text-decoration-color"
+           target="_blank"
+            rel="noopener noreferrer"
         >
           {' '}
           https://support.gigasoft.com/
@@ -87,16 +94,43 @@ const GoMartIntro = () => {
         <UnorderedList lists={transactionFlow} />
         <Info>
           Currently system calculate the admin commission and store earning on
-          Item Value. That is why admin need to deal the Item discount and
-          Coupon discount for item with store manually.
+          Item Value. That is why admin need to deal the{' '}
+          <Mark bg="#d8f2fa">Item discount</Mark> and{' '}
+          <Mark bg="#d8f2fa">Coupon discount for item</Mark> with store
+          manually.
         </Info>
+      </div>
+      <div className="section">
+        <h3>Admin Commission</h3>
+
+        <UnorderedList lists={adminCommission} />
+      </div>
+      <div className="section">
+        <h3>Store Earning</h3>
+
+        <UnorderedList lists={storeEarning} />
+      </div>
+      <div className="section">
+        <h3>Delivery Boy Earning</h3>
+        <p className="title-des">
+          There are two types of delivery boy. One is salaried and another
+          option is freelancing based. We don’t calculate earning for salaried
+          delivery boy. The below calculation is only for freelancing based
+          delivery boys.
+        </p>
+        <UnorderedList lists={deliveryBoyEarning} />
+      </div>
+      <div className="section">
+        <h3>Cash Flow</h3>
+
+        <UnorderedList lists={cashFlow} />
       </div>
 
       <div className="d-flex justify-content-end">
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('basic0');
+              navigate('goMart-basic-0');
             }}
           >
             Next <Next width="16px" />

@@ -21,12 +21,12 @@ const Page = ({ accordions }) => {
     <Container>
       <Row className="doc-div">
         <Col md={4} className="accordion-col">
-          <div className="accordion-col-sticky">
+          <div  className="accordion-col-sticky">
             <button
               className={`title-link text-start w-100 ${
-                intro ? 'title-active' : 'title-inactive'
+                intro ? 'title-active' : 'title-inactive-button'
               }`}
-              onClick={() => navigate('/doc-rest-food')}
+              onClick={() => navigate(location.pathname.split('/')[0])}
             >
               Introduction
             </button>

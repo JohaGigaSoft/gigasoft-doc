@@ -1,0 +1,68 @@
+import { Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import Info from '../../components/Info';
+import Next from '../../components/svgs/Next';
+import Previous from '../../components/svgs/Previous';
+
+const FlutterSdk = () => {
+  const navigate = useNavigate();
+  return (
+    <Container className="introduction">
+      <h1>Flutter SDK</h1>
+      <div className="section overview">
+        <p>
+          You have to download and setup flutter from flutter.dev. You can
+          follow documentation with your own device.
+        </p>
+        <div className="links">
+          <p>
+            {' '}
+            Windows:{' '}
+            <a href="https://docs.flutter.dev/get-started/install/windows">
+              https://docs.flutter.dev/get-started/install/windows
+            </a>
+          </p>
+          <p>
+            {' '}
+            Mac:{' '}
+            <a href="https://docs.flutter.dev/get-started/install/windows">
+              https://docs.flutter.dev/get-started/install/windows
+            </a>
+          </p>
+          <p>
+            {' '}
+            Linux:{' '}
+            <a href="https://docs.flutter.dev/get-started/install/windows">
+              https://docs.flutter.dev/get-started/install/windows
+            </a>
+          </p>
+        </div>
+        <Info>
+          <p className="mt-4">Recommended setup tutorial is below 👇</p>
+        </Info>
+      </div>
+
+      <div className="d-flex justify-content-end">
+        <div className="btn-pre-next">
+          <button
+            onClick={() => {
+              navigate('/doc-go-mart/goMart-mobile-app-0', { replace: true });
+            }}
+            className="me-3"
+          >
+            <Previous width="16px" className="me-1" />
+            Previous
+          </button>
+          <button
+            onClick={() => {
+              navigate('/doc-go-mart/goMart-local-server-1', { replace: true });
+            }}
+          >
+            Next <Next width="16px" />
+          </button>
+        </div>
+      </div>
+    </Container>
+  );
+};
+export default FlutterSdk;

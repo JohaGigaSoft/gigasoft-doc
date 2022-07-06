@@ -18,9 +18,19 @@ h6 {
 }
 
 .text-decoration-color {
-  text-decoration-color: #4cb3d4 !important;
+  text-decoration-color: #aac0fa !important;
 }
 
+/* links */
+
+.links a {
+  color: #df1f06;
+  margin-left: 5px;
+}
+.links a:hover {
+  text-decoration: underline;
+  text-decoration-color: #df1f06 !important;
+}
 /* nav-bar start here */
 
 /* #f8f8f8 */
@@ -104,6 +114,8 @@ a {
   position: sticky;
   top: 86px;
   margin-bottom: 30px;
+  max-height: 81vh;
+  overflow-y: auto;
 }
 
 .accordion-col-two,
@@ -153,6 +165,10 @@ a {
   background: #fff2f0;
   color: #535252;
 }
+.title-inactive-button {
+  color: #000;
+  background: #fff2f0;
+}
 
 .title-active {
   background-image: linear-gradient(to right, #e72409, #d91a00);
@@ -173,6 +189,7 @@ a {
 
 .sub-active {
   background: #f6fdff;
+  color: #e3442e;
 }
 
 .accordion-button::after {
@@ -250,10 +267,8 @@ a {
 
 /* info */
 
-.info {
+div.info {
   padding: 17px;
-  background: #f5ffed;
-  border-left: 4px solid #baf88a;
   border-radius: 2px;
   margin-bottom: 35px;
 }
@@ -261,13 +276,29 @@ a {
 .info h5 {
   font-size: 16px;
   font-weight: 700;
+}
+
+.info .danger {
+  color: #4b1113;
+}
+
+.info .info {
   color: #000;
 }
 
 .info p {
   font-size: 16px;
   font-weight: 400;
-  color: #000;
+  margin-bottom: 0;
+}
+
+.info a {
+  transition: all 0.3s;
+}
+
+.info a:hover {
+  text-decoration-color: #baf88a !important;
+  color: #e3442e !important;
 }
 
 /* happy flow */

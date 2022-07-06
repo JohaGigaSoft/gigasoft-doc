@@ -1,3 +1,5 @@
+import Mark from '../../../components/Mark';
+
 export const mobileApplication = [
   {
     id: 1,
@@ -90,5 +92,72 @@ export const transactionFlow = [
   {
     id: 4,
     content: 'Customer can’t apply more than one coupon for an order.',
+  },
+];
+
+export const adminCommission = [
+  {
+    id: 1,
+    content: 'Admin can setup default commission for entire system.',
+  },
+  {
+    id: 2,
+    content:
+      'There is another option for individual store commission. If admin want, can enable the individual commission for a specific store otherwise the default commission rate will be applicable for each store.',
+  },
+  {
+    id: 3,
+    content: (
+      <span>
+        Admin get commission on <Mark bg="#f6f7f8">Item Value</Mark>
+      </span>
+    ),
+  },
+];
+
+export const storeEarning = [
+  {
+    id: 1,
+    content:
+      'After providing the admin commission, the rest amount of “Item value” will add in store earning.',
+  },
+  {
+    id: 2,
+    content:
+      'The Tax/Vat is totally store’s earning and store need to manage this Tax/Vat for govt. manually.',
+  },
+];
+
+export const deliveryBoyEarning = [
+  {
+    id: 1,
+    content:
+      'Actually we store two delivery fees in database. One is actual delivery cost and another one is customer paid delivery fee. Because there is option for free delivery, coupon for free delivery fee etc. So the earning for a delivery man is the actual delivery cost that is calculated based on distance. If the store is not a free delivery store and there is no coupon for free delivery, then the actual delivery cost and customer paid delivery fee will be same.',
+  },
+  {
+    id: 2,
+    content: 'The Delivery charge is totally Admin’s earning.',
+  },
+  {
+    id: 3,
+    content: 'Admin responsible for Coupon discount for deliver charge.',
+  },
+];
+
+export const cashFlow = [
+  {
+    id: 1,
+    content:
+      'For digital transaction, the Order Amount will be added in Admin Wallet',
+  },
+  {
+    id: 2,
+    content:
+      'For Cash on Delivery, the Order Amount will be added in delivery boys Cash in Hand wallet.',
+  },
+  {
+    id: 3,
+    content:
+      'For the self-pickup but not digitally paid the Order Amount will be added in the store’s collected cash wallet.',
   },
 ];
