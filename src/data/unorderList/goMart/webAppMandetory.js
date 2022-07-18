@@ -35,7 +35,8 @@ export const appSetupOneTwo = [
     content: (
       <span>
         <b>PWA Name:</b> Open <Mark>&lt;project&gt;/web/manifest.json</Mark>{' '}
-        file and set the value of name and short_name with your preferred one.
+        file and set the value of <Mark>name</Mark> and <Mark>short_name</Mark>{' '}
+        with your preferred one.
       </span>
     ),
   },

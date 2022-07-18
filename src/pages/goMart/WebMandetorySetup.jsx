@@ -24,7 +24,10 @@ const WebMandetorySetup = () => {
         <h3 className="title-des">Web App Setup</h3>
         <p>For debug build you can run command:</p>
         <UnorderedList lists={appSetupOne} />
-        <BlockOfCode link="/web/index.html" code={`flutter build apk`} />
+        <BlockOfCode
+          link="/web/index.html"
+          code={`<title>APP_NAME_HERE</title>`}
+        />
         <UnorderedList lists={appSetupOneTwo} />
       </div>
 

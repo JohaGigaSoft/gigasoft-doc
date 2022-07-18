@@ -16,7 +16,7 @@ const AppBuildRelease = () => {
       <div className="section overview">
         <h3 className="title-des">Build for Android</h3>
         <p>For debug build you can run command:</p>
-        <BlockOfCode code={`flutter build apk`} />
+        <BlockOfCode code={`<title>APP_NAME_HERE</title>`} />
         <p>
           You will get a larger merged apk with this. But you can split them
           with this command:
@@ -30,13 +30,13 @@ const AppBuildRelease = () => {
           For deploying it please follow this documentation:
           <Atag href="https://docs.flutter.dev/deployment/android" />
         </p>
-        <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/CCcX3cWpchI" />
+        {/* <Info>Recommended tutorial is below 👇</Info>
+        <Iframe src="https://www.youtube.com/embed/CCcX3cWpchI" /> */}
       </div>
 
       <div className="section">
         <h3 className="title-des">Build for iOS</h3>
-        <p className='info'>
+        <p className="info">
           There are no general way to generate app for iOS. Apple doesn’t allow
           to install app like this debug way. If you want to install it on your
           iOS device then you have to deploy it on TestFlight or AppStore. For

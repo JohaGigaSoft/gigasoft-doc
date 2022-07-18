@@ -34,8 +34,8 @@ const SetupOnServer = () => {
           <Mark> https://your_domain.com</Mark>. And in app code you have to use
           base url as <Mark>https://admin.your_domain.com</Mark>.
         </Info>
-        <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/fmQSQGoycB8" />
+        {/* <Info>Recommended tutorial is below 👇</Info>
+        <Iframe src="https://www.youtube.com/embed/fmQSQGoycB8" /> */}
       </div>
 
       <div className="d-flex justify-content-end">

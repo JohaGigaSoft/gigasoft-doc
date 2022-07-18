@@ -119,8 +119,8 @@ const InstallOnServer = () => {
         <p>Click on the admin panel or view landing page.</p>
         <ImageCard src={allDone} />
 
-        <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/SxAcmwfqz38" />
+        {/* <Info>Recommended tutorial is below 👇</Info>
+        <Iframe src="https://www.youtube.com/embed/SxAcmwfqz38" /> */}
       </div>
 
       <div className="d-flex justify-content-end">

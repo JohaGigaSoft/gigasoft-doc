@@ -13,6 +13,7 @@ import WebMandetorySetup from '../pages/goMart/WebMandetorySetup';
 import SetupOnServer from '../pages/goMart/SetupOnServer';
 import AdminPanel from '../pages/goMart/AdminPanel';
 import AppAndWeb from '../pages/goMart/AppAndWeb';
+import AdminMandatorySetup from '../pages/goMart/AdminMandatorySetup';
 
 const GoMartDetails = () => {
   let params = useParams();
@@ -25,7 +26,7 @@ const GoMartDetails = () => {
       {routeLink === 'goMart-flutter-sdk-1' && <FlutterSdk />}
       {routeLink === 'goMart-local-server-1' && <LocalServer />}
       {routeLink === 'goMart-install-on-server-2' && <InstallOnServer />}
-      {routeLink === 'goMart-mandatory-setup-2' && <MandatorySetup />}
+      {routeLink === 'goMart-mandatory-setup-2' && <AdminMandatorySetup />}
       {routeLink === 'goMart-customization-2' && <Customization />}
       {routeLink === 'goMart-mandatory-setup-3' && <MandatorySetup />}
       {routeLink === 'goMart-customization-3' && <MobileCustomization />}

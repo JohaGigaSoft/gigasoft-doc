@@ -26,15 +26,15 @@ const MobileCustomization = () => {
         <h3 className="title-des">Country Filter</h3>
         <UnorderedList lists={countryFilterOne} />
         <BlockOfCode
-          link="/web/index.html"
+          link="/lib/view/screens/auth/sign_in_screen.dart"
           code={`countryFilter: [_countryDialCode]`}
         />
-        <Info danger={true}>Recommended setup tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/xQ1WnEFDBtQ" />
+        {/* <Info >Recommended setup tutorial is below 👇</Info>
+        <Iframe src="https://www.youtube.com/embed/xQ1WnEFDBtQ" /> */}
         <UnorderedList lists={countryFilterTwo} />
         <BlockOfCode
-          link="/web/index.html"
-          code={`countryFilter: [_countryDialCode]`}
+          link="/lib/view/screens/auth/sign_in_screen.dart"
+          code={`enabled: false`}
         />
       </div>
       <div className="section">
@@ -47,8 +47,8 @@ const MobileCustomization = () => {
           <Mark>&lt;project&gt;/assets/language/ar.json</Mark> file also.
         </p>
         <BlockOfCode
-          link="/web/index.html"
-          code={`countryFilter: [_countryDialCode]`}
+          link="/assets/language/en.json"
+          code={`"on_boarding_1_title": “YOUR_PREFERRED_TEXT”,`}
         />
         <p>
           ii) Graphics: If you want to change graphics of on boarding page then
@@ -61,14 +61,14 @@ const MobileCustomization = () => {
       <div className="section">
         <h3 className="title-des">Add New Local Language</h3>
         <UnorderedList lists={localLanguage} />
-        <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/_jGQav1WSHk" />
+        {/* <Info>Recommended tutorial is below 👇</Info>
+        <Iframe src="https://www.youtube.com/embed/_jGQav1WSHk" /> */}
       </div>
       <div className="section">
         <h3 className="title-des">Change App Color</h3>
         <UnorderedList lists={appColor} />
-        <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/_jGQav1WSHk" />
+        {/* <Info>Recommended tutorial is below 👇</Info>
+        <Iframe src="https://www.youtube.com/embed/_jGQav1WSHk" /> */}
       </div>
       <div className="section">
         <h3 className="title-des">Change App Font</h3>
