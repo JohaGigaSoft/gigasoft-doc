@@ -31,7 +31,7 @@ h6 {
 }
 
 .text-decoration-color {
-  text-decoration-color: #aac0fa !important;
+  /* text-decoration-color: #aac0fa !important; */
 }
 
 /* links */
@@ -41,7 +41,7 @@ h6 {
   margin-left: 5px;
 }
 .links a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
   text-decoration-color: #df1f06 !important;
 }
 /* nav-bar start here */
@@ -295,10 +295,6 @@ div.info {
   color: #4b1113;
 }
 
-.info .info {
-  color: #000;
-}
-
 .info p {
   font-size: 16px;
   font-weight: 400;
@@ -306,14 +302,13 @@ div.info {
 }
 
 .info a {
-  transition: all 0.3s;
-  color: #e3442e;
-  display: block;
+  color: #df1f06 !important;
+  margin-left: 5px;
+  text-decoration: none !important;
 }
-
 .info a:hover {
-  text-decoration-color: #baf88a !important;
-  color: #3fa2e4 !important;
+  text-decoration: underline !important;
+  text-decoration-color: #df1f06 !important;
 }
 
 /* happy flow */

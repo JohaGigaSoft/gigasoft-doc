@@ -9,11 +9,11 @@ import {
   storeEarning,
   deliveryBoyEarning,
   cashFlow,
-} from '../data/unorderList/goMart/introductionList';
-import Info from './Info';
-import Mark from './Mark';
-import Next from './svgs/Next';
-import UnorderedList from './UnorderedList';
+} from '../../data/unorderList/goMart/introductionList';
+import Info from '../../components/Info';
+import Mark from '../../components/Mark';
+import Next from '../../components/svgs/Next';
+import UnorderedList from '../../components/UnorderedList';
 
 const GoMartIntro = () => {
   const navigate = useNavigate();

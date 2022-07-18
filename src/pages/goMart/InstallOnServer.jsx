@@ -5,12 +5,18 @@ import Mark from '../../components/Mark';
 import Next from '../../components/svgs/Next';
 import Previous from '../../components/svgs/Previous';
 import ImageCard from '../../components/ImageCard';
+import Iframe from '../../components/Iframe';
 
 // images
 import cPanel from '../../assets/images/cpanel.png';
 import db from '../../assets/images/db.png';
 import software from '../../assets/images/software.png';
-import Iframe from '../../components/Iframe';
+import installationProcess from '../../assets/images/installation-process.png';
+import purchaseCode from '../../assets/images/purchase-code.png';
+import configureDatabase from '../../assets/images/configure-database.png';
+import importSoftwareDatabase from '../../assets/images/import-software-database.png';
+import adminAccoutSetting from '../../assets/images/admin-accout-setting.png';
+import allDone from '../../assets/images/all-done.png';
 
 const InstallOnServer = () => {
   const navigate = useNavigate();
@@ -34,6 +40,10 @@ const InstallOnServer = () => {
           panel in admin.yourdomain.com or in any subdomain. Later in web app
           part you will know how you need to install the web app on your server.
         </Info>
+        <Info danger={true}>
+          Don’t install the admin panel or web app in a sub directory (like:
+          yourdomain.com/folder)
+        </Info>
       </div>
 
       <div className="section">
@@ -48,14 +58,18 @@ const InstallOnServer = () => {
           <Mark>www.yourdomain.com/my-new-website</Mark>
         </p>
 
-        <p>
+        <p className="links">
           Giga Soft requires an <Mark>SSL certificate</Mark> to be installed on
           your domain to work with all the services. A{' '}
           <Mark>FREE SSL certificate</Mark> can be easily installed on your
           domain using{' '}
-          <span style={{ color: '#e3442e', marginLeft: '3px' }}>
+          <a
+            href="https://www.sslforfree.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             sslforfree.com
-          </span>
+          </a>
         </p>
         <p>Create the database properly</p>
         <p>Create a new database from your server MYSQL database</p>
@@ -74,27 +88,27 @@ const InstallOnServer = () => {
           <Mark>Step 3:</Mark> All the required extensions and permission must
           be enabled
         </p>
-        <ImageCard src={cPanel} />
+        <ImageCard src={installationProcess} />
         <p>
           <Mark>Step 4:</Mark> Provide your codecanyon username and purchase
           code and go next
         </p>
-        <ImageCard src={cPanel} />
+        <ImageCard src={purchaseCode} />
         <p>
           <Mark>Step 5:</Mark> Now you need to set Database host, Database name,
           Database username, Database password and click continue if the
           database in your server then the host is localhost.
         </p>
-        <ImageCard src={cPanel} />
+        <ImageCard src={configureDatabase} />
         <p>
           <Mark>Step 6:</Mark> Now you need to import the SQL file. For this
           just click on Import Database button
         </p>
-        <ImageCard src={cPanel} />
+        <ImageCard src={importSoftwareDatabase} />
         <p>
           <Mark>Step 7:</Mark> Now fill up the information and click continue
         </p>
-        <ImageCard src={cPanel} />
+        <ImageCard src={adminAccoutSetting} />
 
         <hr />
         <br />
@@ -102,9 +116,9 @@ const InstallOnServer = () => {
         <p>
           <Mark>Step 8:</Mark> All done, your software is ready to run.
         </p>
-        <ImageCard src={cPanel} />
         <p>Click on the admin panel or view landing page.</p>
-        <ImageCard src={cPanel} />
+        <ImageCard src={allDone} />
+
         <Info>Recommended tutorial is below 👇</Info>
         <Iframe src="https://www.youtube.com/embed/SxAcmwfqz38" />
       </div>

@@ -17,28 +17,6 @@ const navItems = [
     to: 'doc-go-mart',
     title: 'GoMart',
   },
-  {
-    id: 3,
-    to: 'doc-demo-1',
-    title: 'Demo 1',
-  },
-
-  {
-    id: 4,
-    to: 'doc-demo-2',
-    title: 'Demo 2',
-  },
-  {
-    id: 5,
-    to: 'doc-demo-3',
-    title: 'Demo 3',
-  },
-
-  {
-    id: 6,
-    to: 'doc-demo-4',
-    title: 'Demo 4',
-  },
 ];
 
 const DocNav = () => {
@@ -69,10 +47,15 @@ const DocNav = () => {
             ))}
           </Nav>
           <Nav>
-            <NavLink to="/" className="nav-link inactive">
+            <a
+              href="https://gigasoft.com.bd/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="nav-link inactive"
+            >
               Visit Giga Soft{' '}
               <i className="fa-solid fa-arrow-up-right-from-square ms-2"></i>
-            </NavLink>
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Container>

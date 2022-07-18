@@ -2,7 +2,7 @@ import Details from './layouts/Details';
 import Home from './components/Home';
 import Page from './layouts/Page';
 import RestFoodIntro from './components/RestFoodIntro';
-import GoMartIntro from './components/GoMartIntro';
+import GoMartIntro from './pages/goMart/GoMartIntro';
 
 // Data
 import { restFood } from './data/restFood';

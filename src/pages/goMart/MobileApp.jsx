@@ -17,7 +17,7 @@ const MobileApp = () => {
         <Info>
           You can download android studio from here:
           <a
-            href="https://support.gigasoft.com/"
+            href="https://developer.android.com/studio?gclid=CjwKCAiAiKuOBhBQEiwAId_sK4X0PLQrES_2pG_S8nPflALgWSOCUEqRRAFpbS4AmR5mXmU6hIhvHxoCfBgQAvD_BwE&gclsrc=aw.ds"
             className="mt-3 text-break text-black text-decoration-underline text-decoration-color d-block"
             target="_blank"
             rel="noopener noreferrer"

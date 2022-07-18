@@ -20,7 +20,7 @@ const LocalServer = () => {
         <Info>
           <p className="mt-4">Recommended setup tutorial is below 👇</p>
         </Info>
-        <Iframe src="https://www.youtube.com/embed/W70BtgE7Jy8" />
+        <Iframe src="https://www.youtube.com/embed/5kGSmjoulgs" />
       </div>
 
       <div className="d-flex justify-content-end">
