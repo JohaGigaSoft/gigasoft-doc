@@ -1,14 +1,16 @@
-import Details from './layouts/Details';
 import Home from './components/Home';
 import Page from './layouts/Page';
-import RestFoodIntro from './components/RestFoodIntro';
 import GoMartIntro from './pages/goMart/GoMartIntro';
+import GigaMartIntro from './pages/gigaMart/GigaMartIntro';
+import RestFoodIntro from './pages/restFood/RestFoodIntro';
+import RestFoodDetails from './layouts/RestFoodDetails';
+import GoMartDetails from './layouts/GoMartDetails';
+import GigaMartDetails from './layouts/GigaMartDetails';
 
 // Data
 import { restFood } from './data/restFood';
 import { goMart } from './data/goMart';
-import Introduction from './components/Introduction';
-import GoMartDetails from './layouts/GoMartDetails';
+import { gigaMart } from './data/gigaMart';
 
 export const routes = [
   {
@@ -26,7 +28,7 @@ export const routes = [
       },
       {
         path: ':docGigaFood',
-        element: <Details />,
+        element: <RestFoodDetails />,
       },
     ],
   },
@@ -45,59 +47,16 @@ export const routes = [
     ],
   },
   {
-    path: 'doc-demo-1',
-    element: <Page accordions={goMart} />,
+    path: 'doc-giga-mart',
+    element: <Page accordions={gigaMart} />,
     children: [
       {
         index: true,
-        element: <Introduction title="Demo 1" />,
+        element: <GigaMartIntro />,
       },
       {
         path: ':docGigaFood',
-        element: <Details />,
-      },
-    ],
-  },
-  {
-    path: 'doc-demo-2',
-    element: <Page accordions={goMart} />,
-    children: [
-      {
-        index: true,
-        element: <Introduction title="Demo 2" />,
-      },
-      {
-        path: ':docGigaFood',
-        element: <Details />,
-      },
-    ],
-  },
-
-  {
-    path: 'doc-demo-3',
-    element: <Page accordions={goMart} />,
-    children: [
-      {
-        index: true,
-        element: <Introduction title="Demo 3" />,
-      },
-      {
-        path: ':docGigaFood',
-        element: <Details />,
-      },
-    ],
-  },
-  {
-    path: 'doc-demo-4',
-    element: <Page accordions={goMart} />,
-    children: [
-      {
-        index: true,
-        element: <Introduction title="Demo 4" />,
-      },
-      {
-        path: ':docGigaFood',
-        element: <Details />,
+        element: <GigaMartDetails />,
       },
     ],
   },

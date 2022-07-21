@@ -66,7 +66,7 @@ const AdminMandatorySetup = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-install-on-server-2', {
+              navigate('/doc-go-mart/go_mart-install-on-server-2', {
                 replace: true,
               });
             }}
@@ -77,7 +77,7 @@ const AdminMandatorySetup = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-customization-2', {
+              navigate('/doc-go-mart/go_mart-customization-2', {
                 replace: true,
               });
             }}

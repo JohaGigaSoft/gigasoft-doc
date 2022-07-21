@@ -4,11 +4,11 @@ import Info from '../../components/Info';
 import Next from '../../components/svgs/Next';
 import Previous from '../../components/svgs/Previous';
 import UnorderedList from '../../components/UnorderedList';
+import { BlockOfCode } from './MandatorySetup';
 import {
   appSetupOne,
   appSetupOneTwo,
 } from '../../data/unorderList/goMart/webAppMandetory';
-import { BlockOfCode } from './MandatorySetup';
 
 const WebMandetorySetup = () => {
   const navigate = useNavigate();
@@ -35,7 +35,7 @@ const WebMandetorySetup = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-app-build-release-3', {
+              navigate('/doc-go-mart/go_mart-app-build-release-3', {
                 replace: true,
               });
             }}
@@ -46,7 +46,7 @@ const WebMandetorySetup = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-build-code-and-setup-on-server-4', {
+              navigate('/doc-go-mart/go_mart-build-code-and-setup-on-server-4', {
                 replace: true,
               });
             }}

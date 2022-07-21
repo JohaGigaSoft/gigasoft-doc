@@ -1,6 +1,5 @@
 import { Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import Iframe from '../../components/Iframe';
 import Info from '../../components/Info';
 import Mark from '../../components/Mark';
 import Next from '../../components/svgs/Next';
@@ -41,10 +40,7 @@ const MandatorySetup = () => {
         Same documentation for all related projects like{' '}
         <strong>Delivery</strong> & <strong>Store</strong>
       </Info>
-      {/* <div className="section">
-        <h3>Run an existing flutter project on IDE</h3>
-        <Iframe src="https://www.youtube.com/embed/a-BywlH_DcM" />
-      </div> */}
+     
 
       <div className="section">
         <h3>Change App Logo</h3>
@@ -52,10 +48,7 @@ const MandatorySetup = () => {
           You can generate app icon from this website https://app icon.co.
         </p>
         <UnorderedList lists={mobileMandatorySetup} />
-        {/* <Info>
-          <span className="mt-3 d-block">Recommended tutorial is below 👇</span>
-        </Info>
-        <Iframe src="https://www.youtube.com/embed/P2xhoFwNIz8" /> */}
+       
       </div>
 
       <div className="section">
@@ -90,8 +83,7 @@ const MandatorySetup = () => {
 <string>My App</string>`}
           />
         </ol>
-        {/* <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/2fgCgYrXwJ0" /> */}
+        
       </div>
       <div className="section">
         <h3>Change Base URL</h3>
@@ -110,7 +102,7 @@ const MandatorySetup = () => {
           code={`static const String BASE_URL = 'https://your_domain.com';`}
         />
 
-        {/* <Iframe src="https://www.youtube.com/embed/2fgCgYrXwJ0" /> */}
+       
       </div>
       <div className="section">
         <h3>Change App Package</h3>
@@ -124,8 +116,7 @@ const MandatorySetup = () => {
           your preferred package name in second box and then click on{' '}
           <Mark>Replace All</Mark> button.
         </p>
-        {/* <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/4M0LmTjBuKk" /> */}
+       
       </div>
 
       <div className="section">
@@ -147,8 +138,7 @@ const MandatorySetup = () => {
           simulator. Emulator and simulators are unable to get push. Use real
           device in this case.
         </p>
-        {/* <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/4M0LmTjBuKk" /> */}
+      
       </div>
       <div className="section">
         <h3>Add Google Map API Key</h3>
@@ -181,15 +171,14 @@ const MandatorySetup = () => {
           link="/web/index.html"
           code={`<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_MAP_API_KEY_HERE"></script>`}
         />
-        {/* <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/kfHNfPEzSLs" /> */}
+      
       </div>
 
       <div className="d-flex justify-content-end">
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-customization-2', {
+              navigate('/doc-go-mart/go_mart-customization-2', {
                 replace: true,
               });
             }}
@@ -200,7 +189,7 @@ const MandatorySetup = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-customization-3', {
+              navigate('/doc-go-mart/go_mart-customization-3', {
                 replace: true,
               });
             }}

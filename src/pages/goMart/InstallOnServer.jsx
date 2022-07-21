@@ -5,7 +5,6 @@ import Mark from '../../components/Mark';
 import Next from '../../components/svgs/Next';
 import Previous from '../../components/svgs/Previous';
 import ImageCard from '../../components/ImageCard';
-import Iframe from '../../components/Iframe';
 
 // images
 import cPanel from '../../assets/images/cpanel.png';
@@ -118,16 +117,13 @@ const InstallOnServer = () => {
         </p>
         <p>Click on the admin panel or view landing page.</p>
         <ImageCard src={allDone} />
-
-        {/* <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/SxAcmwfqz38" /> */}
       </div>
 
       <div className="d-flex justify-content-end">
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-local-server-1', { replace: true });
+              navigate('/doc-go-mart/go_mart-local-server-1', { replace: true });
             }}
             className="me-3"
           >
@@ -136,7 +132,7 @@ const InstallOnServer = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-mandatory-setup-2', {
+              navigate('/doc-go-mart/go_mart-mandatory-setup-2', {
                 replace: true,
               });
             }}

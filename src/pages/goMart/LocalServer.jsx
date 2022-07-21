@@ -27,7 +27,7 @@ const LocalServer = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-flutter-sdk-1', { replace: true });
+              navigate('/doc-go-mart/go_mart-flutter-sdk-1', { replace: true });
             }}
             className="me-3"
           >
@@ -36,7 +36,7 @@ const LocalServer = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-install-on-server-2', {
+              navigate('/doc-go-mart/go_mart-install-on-server-2', {
                 replace: true,
               });
             }}

@@ -130,7 +130,7 @@ const GoMartIntro = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('goMart-basic-0');
+              navigate('go_mart-basic-0');
             }}
           >
             Next <Next width="16px" />

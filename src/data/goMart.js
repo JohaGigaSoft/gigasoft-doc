@@ -4,15 +4,15 @@ export const goMart = [
     accordionName: 'Prerequisite',
     items: [
       {
-        id: 'goMart-basic',
+        id: 'go_mart-basic',
         itemName: 'Basic',
       },
       {
-        id: 'goMart-server',
+        id: 'go_mart-server',
         itemName: 'Server',
       },
       {
-        id: 'goMart-mobile-app',
+        id: 'go_mart-mobile-app',
         itemName: 'Mobile app',
       },
     ],
@@ -22,11 +22,11 @@ export const goMart = [
     accordionName: 'Environment Setup',
     items: [
       {
-        id: 'goMart-flutter-sdk',
+        id: 'go_mart-flutter-sdk',
         itemName: 'Flutter SDK',
       },
       {
-        id: 'goMart-local-server',
+        id: 'go_mart-local-server',
         itemName: 'Local server (not mandatory)',
       },
     ],
@@ -36,15 +36,15 @@ export const goMart = [
     accordionName: 'Admin Panel',
     items: [
       {
-        id: 'goMart-install-on-server',
+        id: 'go_mart-install-on-server',
         itemName: 'Install on server',
       },
       {
-        id: 'goMart-mandatory-setup',
+        id: 'go_mart-mandatory-setup',
         itemName: 'Mandatory setup',
       },
       {
-        id: 'goMart-customization',
+        id: 'go_mart-customization',
         itemName: 'Customization',
       },
     ],
@@ -54,15 +54,15 @@ export const goMart = [
     accordionName: 'Mobile Apps',
     items: [
       {
-        id: 'goMart-mandatory-setup',
+        id: 'go_mart-mandatory-setup',
         itemName: 'Mandatory setup',
       },
       {
-        id: 'goMart-customization',
+        id: 'go_mart-customization',
         itemName: 'Customization',
       },
       {
-        id: 'goMart-app-build-release',
+        id: 'go_mart-app-build-release',
         itemName: 'App build & release',
       },
     ],
@@ -72,11 +72,11 @@ export const goMart = [
     accordionName: 'Web App',
     items: [
       {
-        id: 'goMart-mandatory-setup',
+        id: 'go_mart-mandatory-setup',
         itemName: 'Mandatory setup',
       },
       {
-        id: 'goMart-build-code-and-setup-on-server',
+        id: 'go_mart-build-code-and-setup-on-server',
         itemName: 'Build code and setup on server',
       },
     ],
@@ -86,11 +86,11 @@ export const goMart = [
     accordionName: 'Update',
     items: [
       {
-        id: 'goMart-admin-Panel',
+        id: 'go_mart-admin-Panel',
         itemName: 'Admin Panel',
       },
       {
-        id: 'goMart-app-web',
+        id: 'go_mart-app-web',
         itemName: 'App & Web',
       },
     ],

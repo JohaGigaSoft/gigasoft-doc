@@ -69,7 +69,7 @@ const FlutterSdk = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-mobile-app-0', { replace: true });
+              navigate('/doc-go-mart/go_mart-mobile-app-0', { replace: true });
             }}
             className="me-3"
           >
@@ -78,7 +78,7 @@ const FlutterSdk = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-local-server-1', { replace: true });
+              navigate('/doc-go-mart/go_mart-local-server-1', { replace: true });
             }}
           >
             Next <Next width="16px" />

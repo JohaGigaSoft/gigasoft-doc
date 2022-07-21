@@ -32,7 +32,7 @@ const MobileApp = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-server-0', { replace: true });
+              navigate('/doc-go-mart/go_mart-server-0', { replace: true });
             }}
             className="me-3"
           >
@@ -41,7 +41,7 @@ const MobileApp = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-flutter-sdk-1', { replace: true });
+              navigate('/doc-go-mart/go_mart-flutter-sdk-1', { replace: true });
             }}
           >
             Next <Next width="16px" />

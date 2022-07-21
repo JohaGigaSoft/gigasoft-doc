@@ -42,7 +42,7 @@ const Basic = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-server-0', { replace: true });
+              navigate('/doc-go-mart/go_mart-server-0', { replace: true });
             }}
           >
             Next <Next width="16px" />

@@ -66,7 +66,7 @@ const AppAndWeb = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-admin-Panel-5', {
+              navigate('/doc-go-mart/go_mart-admin-Panel-5', {
                 replace: true,
               });
             }}

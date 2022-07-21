@@ -1,8 +1,6 @@
 import { Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Atag from '../../components/Atag';
-import Iframe from '../../components/Iframe';
-import Info from '../../components/Info';
 import Mark from '../../components/Mark';
 import Next from '../../components/svgs/Next';
 import Previous from '../../components/svgs/Previous';
@@ -30,8 +28,7 @@ const AppBuildRelease = () => {
           For deploying it please follow this documentation:
           <Atag href="https://docs.flutter.dev/deployment/android" />
         </p>
-        {/* <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/CCcX3cWpchI" /> */}
+        
       </div>
 
       <div className="section">
@@ -48,7 +45,7 @@ const AppBuildRelease = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-customization-3', {
+              navigate('/doc-go-mart/go_mart-customization-3', {
                 replace: true,
               });
             }}
@@ -59,7 +56,7 @@ const AppBuildRelease = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-mandatory-setup-4', {
+              navigate('/doc-go-mart/go_mart-mandatory-setup-4', {
                 replace: true,
               });
             }}

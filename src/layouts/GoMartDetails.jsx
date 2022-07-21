@@ -20,23 +20,23 @@ const GoMartDetails = () => {
   const routeLink = params.docGigaFood;
   return (
     <div>
-      {routeLink === 'goMart-basic-0' && <Basic />}
-      {routeLink === 'goMart-server-0' && <Server />}
-      {routeLink === 'goMart-mobile-app-0' && <MobileApp />}
-      {routeLink === 'goMart-flutter-sdk-1' && <FlutterSdk />}
-      {routeLink === 'goMart-local-server-1' && <LocalServer />}
-      {routeLink === 'goMart-install-on-server-2' && <InstallOnServer />}
-      {routeLink === 'goMart-mandatory-setup-2' && <AdminMandatorySetup />}
-      {routeLink === 'goMart-customization-2' && <Customization />}
-      {routeLink === 'goMart-mandatory-setup-3' && <MandatorySetup />}
-      {routeLink === 'goMart-customization-3' && <MobileCustomization />}
-      {routeLink === 'goMart-app-build-release-3' && <AppBuildRelease />}
-      {routeLink === 'goMart-mandatory-setup-4' && <WebMandetorySetup />}
-      {routeLink === 'goMart-build-code-and-setup-on-server-4' && (
+      {routeLink === 'go_mart-basic-0' && <Basic />}
+      {routeLink === 'go_mart-server-0' && <Server />}
+      {routeLink === 'go_mart-mobile-app-0' && <MobileApp />}
+      {routeLink === 'go_mart-flutter-sdk-1' && <FlutterSdk />}
+      {routeLink === 'go_mart-local-server-1' && <LocalServer />}
+      {routeLink === 'go_mart-install-on-server-2' && <InstallOnServer />}
+      {routeLink === 'go_mart-mandatory-setup-2' && <AdminMandatorySetup />}
+      {routeLink === 'go_mart-customization-2' && <Customization />}
+      {routeLink === 'go_mart-mandatory-setup-3' && <MandatorySetup />}
+      {routeLink === 'go_mart-customization-3' && <MobileCustomization />}
+      {routeLink === 'go_mart-app-build-release-3' && <AppBuildRelease />}
+      {routeLink === 'go_mart-mandatory-setup-4' && <WebMandetorySetup />}
+      {routeLink === 'go_mart-build-code-and-setup-on-server-4' && (
         <SetupOnServer />
       )}
-      {routeLink === 'goMart-admin-Panel-5' && <AdminPanel />}
-      {routeLink === 'goMart-app-web-5' && <AppAndWeb />}
+      {routeLink === 'go_mart-admin-Panel-5' && <AdminPanel />}
+      {routeLink === 'go_mart-app-web-5' && <AppAndWeb />}
 
       {/* <p>{routeLink}</p> */}
     </div>

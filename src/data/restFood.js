@@ -1,19 +1,19 @@
 export const restFood = [
   {
     id: 1,
-    accordionName: 'Admin panel',
+    accordionName: 'Prerequisite',
     items: [
       {
-        id: 'install-on-server',
-        itemName: 'Install on server',
+        id: 'rest_food-basic',
+        itemName: 'Basic',
       },
       {
-        id: 'mandatory-setup',
-        itemName: 'Mandatory setup',
+        id: 'rest_food-server',
+        itemName: 'Server',
       },
       {
-        id: 'customization',
-        itemName: 'Customization',
+        id: 'rest_food-mobile-app',
+        itemName: 'Mobile app',
       },
     ],
   },
@@ -22,30 +22,76 @@ export const restFood = [
     accordionName: 'Environment Setup',
     items: [
       {
-        id: 'environment-setup-one',
-        itemName: 'Environment Setup One',
+        id: 'rest_food-flutter-sdk',
+        itemName: 'Flutter SDK',
       },
       {
-        id: 'environment-setup-two',
-        itemName: 'Environment Setup Two',
+        id: 'rest_food-local-server',
+        itemName: 'Local server (not mandatory)',
       },
     ],
   },
   {
     id: 3,
-    accordionName: 'Mobile Apps',
+    accordionName: 'Admin Panel',
     items: [
       {
-        id: 'mandatory-setup',
+        id: 'rest_food-install-on-server',
+        itemName: 'Install on server',
+      },
+      {
+        id: 'rest_food-mandatory-setup',
         itemName: 'Mandatory setup',
       },
       {
-        id: 'customization',
+        id: 'rest_food-customization',
+        itemName: 'Customization',
+      },
+    ],
+  },
+  {
+    id: 4,
+    accordionName: 'Mobile Apps',
+    items: [
+      {
+        id: 'rest_food-mandatory-setup',
+        itemName: 'Mandatory setup',
+      },
+      {
+        id: 'rest_food-customization',
         itemName: 'Customization',
       },
       {
-        id: 'app-build-release',
+        id: 'rest_food-app-build-release',
         itemName: 'App build & release',
+      },
+    ],
+  },
+  {
+    id: 5,
+    accordionName: 'Web App',
+    items: [
+      {
+        id: 'rest_food-mandatory-setup',
+        itemName: 'Mandatory setup',
+      },
+      {
+        id: 'rest_food-build-code-and-setup-on-server',
+        itemName: 'Build code and setup on server',
+      },
+    ],
+  },
+  {
+    id: 6,
+    accordionName: 'Update',
+    items: [
+      {
+        id: 'rest_food-admin-Panel',
+        itemName: 'Admin Panel',
+      },
+      {
+        id: 'rest_food-app-web',
+        itemName: 'App & Web',
       },
     ],
   },

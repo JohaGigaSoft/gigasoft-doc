@@ -1,7 +1,5 @@
 import { Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import Iframe from '../../components/Iframe';
-import Info from '../../components/Info';
 import Mark from '../../components/Mark';
 import Next from '../../components/svgs/Next';
 import Previous from '../../components/svgs/Previous';
@@ -29,8 +27,7 @@ const MobileCustomization = () => {
           link="/lib/view/screens/auth/sign_in_screen.dart"
           code={`countryFilter: [_countryDialCode]`}
         />
-        {/* <Info >Recommended setup tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/xQ1WnEFDBtQ" /> */}
+        
         <UnorderedList lists={countryFilterTwo} />
         <BlockOfCode
           link="/lib/view/screens/auth/sign_in_screen.dart"
@@ -61,14 +58,12 @@ const MobileCustomization = () => {
       <div className="section">
         <h3 className="title-des">Add New Local Language</h3>
         <UnorderedList lists={localLanguage} />
-        {/* <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/_jGQav1WSHk" /> */}
+        
       </div>
       <div className="section">
         <h3 className="title-des">Change App Color</h3>
         <UnorderedList lists={appColor} />
-        {/* <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/_jGQav1WSHk" /> */}
+       
       </div>
       <div className="section">
         <h3 className="title-des">Change App Font</h3>
@@ -78,7 +73,7 @@ const MobileCustomization = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-mandatory-setup-3', {
+              navigate('/doc-go-mart/go_mart-mandatory-setup-3', {
                 replace: true,
               });
             }}
@@ -89,7 +84,7 @@ const MobileCustomization = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-app-build-release-3', {
+              navigate('/doc-go-mart/go_mart-app-build-release-3', {
                 replace: true,
               });
             }}

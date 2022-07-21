@@ -61,7 +61,7 @@ const AdminPanel = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-build-code-and-setup-on-server-4', {
+              navigate('/doc-go-mart/go_mart-build-code-and-setup-on-server-4', {
                 replace: true,
               });
             }}
@@ -72,7 +72,7 @@ const AdminPanel = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-app-web-5', {
+              navigate('/doc-go-mart/go_mart-app-web-5', {
                 replace: true,
               });
             }}

@@ -1,6 +1,5 @@
 import { Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import Iframe from '../../components/Iframe';
 import Info from '../../components/Info';
 import Mark from '../../components/Mark';
 import Next from '../../components/svgs/Next';
@@ -34,15 +33,14 @@ const SetupOnServer = () => {
           <Mark> https://your_domain.com</Mark>. And in app code you have to use
           base url as <Mark>https://admin.your_domain.com</Mark>.
         </Info>
-        {/* <Info>Recommended tutorial is below 👇</Info>
-        <Iframe src="https://www.youtube.com/embed/fmQSQGoycB8" /> */}
+       
       </div>
 
       <div className="d-flex justify-content-end">
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-mandatory-setup-4', {
+              navigate('/doc-go-mart/go_mart-mandatory-setup-4', {
                 replace: true,
               });
             }}
@@ -53,7 +51,7 @@ const SetupOnServer = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-admin-Panel-5', {
+              navigate('/doc-go-mart/go_mart-admin-Panel-5', {
                 replace: true,
               });
             }}

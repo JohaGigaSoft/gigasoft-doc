@@ -17,6 +17,11 @@ const navItems = [
     to: 'doc-go-mart',
     title: 'GoMart',
   },
+  {
+    id: 3,
+    to: 'doc-giga-mart',
+    title: 'GigaMart',
+  },
 ];
 
 const DocNav = () => {
@@ -48,7 +53,7 @@ const DocNav = () => {
           </Nav>
           <Nav>
             <a
-              href="https://gigasoft.com.bd/"
+              href="https://gigasoftbd.com/"
               target="_blank"
               rel="noreferrer noopener"
               className="nav-link inactive"

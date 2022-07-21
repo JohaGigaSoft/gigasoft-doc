@@ -41,7 +41,7 @@ const Customization = () => {
         <div className="btn-pre-next">
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-mandatory-setup-2', {
+              navigate('/doc-go-mart/go_mart-mandatory-setup-2', {
                 replace: true,
               });
             }}
@@ -52,7 +52,7 @@ const Customization = () => {
           </button>
           <button
             onClick={() => {
-              navigate('/doc-go-mart/goMart-mandatory-setup-3', {
+              navigate('/doc-go-mart/go_mart-mandatory-setup-3', {
                 replace: true,
               });
             }}
